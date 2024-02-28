@@ -1,0 +1,6 @@
+@RunningShoes_HostAddress = http://localhost:5285
+
+GET {{RunningShoes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

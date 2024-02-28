@@ -1,0 +1,31 @@
+# Visual Studio specific files
+*.suo
+*.vbproj
+*.sln
+*.user
+*.aspxdesigner.cs
+
+# Build artifacts
+/bin/
+/obj/
+
+# Temporary files
+*.tmp
+
+# NuGet packages folder
+/packages/
+
+# Ignore any local configuration files
+*.config
+
+# Ignore user secrets file
+appsettings.json
+
+# Ignore API keys or other sensitive files
+secrets.json
+
+# Test files
+/test/
+
+# Ignore database connection string or other sensitive database related files
+*.dbconnectionstrings.json
