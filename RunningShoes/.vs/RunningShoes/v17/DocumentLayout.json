@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\running_shoes\\RunningShoes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\models\\reviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:models\\reviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\models\\runningshoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:models\\runningshoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reviewer.cs",
+              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Models\\Reviewer.cs",
+              "RelativeDocumentMoniker": "Models\\Reviewer.cs",
+              "ToolTip": "D:\\running_shoes\\RunningShoes\\Models\\Reviewer.cs",
+              "RelativeToolTip": "Models\\Reviewer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:46:50.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "D:\\running_shoes\\RunningShoes\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:44:40.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -39,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RunningShoes.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Models\\RunningShoes.cs",
               "RelativeDocumentMoniker": "Models\\RunningShoes.cs",
               "ToolTip": "D:\\running_shoes\\RunningShoes\\Models\\RunningShoes.cs",
               "RelativeToolTip": "Models\\RunningShoes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T10:34:01.816Z",
               "EditorCaption": ""
