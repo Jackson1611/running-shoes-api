@@ -16,6 +16,6 @@ public class RunningShoesDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(_configuration.GetConnectionString("RunningShoesDb"));
+        optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
     }
 }
