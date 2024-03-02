@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\running_shoes\\RunningShoes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\migrations\\20240301172141_updateshoemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:migrations\\20240301172141_updateshoemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\controllers\\runningshoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:controllers\\runningshoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\data\\runningshoesseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:data\\runningshoesseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\migrations\\20240301172141_updateshoemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:migrations\\20240301172141_updateshoemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "20240301172141_UpdateShoeModel.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Migrations\\20240301172141_UpdateShoeModel.cs",
               "RelativeDocumentMoniker": "Migrations\\20240301172141_UpdateShoeModel.cs",
@@ -55,26 +55,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RunningShoesSeeder.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Data\\RunningShoesSeeder.cs",
               "RelativeDocumentMoniker": "Data\\RunningShoesSeeder.cs",
               "ToolTip": "D:\\running_shoes\\RunningShoes\\Data\\RunningShoesSeeder.cs",
               "RelativeToolTip": "Data\\RunningShoesSeeder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T10:35:36.115Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RunningShoesController.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Controllers\\RunningShoesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RunningShoesController.cs",
               "ToolTip": "D:\\running_shoes\\RunningShoes\\Controllers\\RunningShoesController.cs",
               "RelativeToolTip": "Controllers\\RunningShoesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T10:22:31.347Z",
               "EditorCaption": ""
