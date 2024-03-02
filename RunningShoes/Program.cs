@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using RunningShoes.Models;
+using Microsoft.Extensions.DependencyInjection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,10 +19,18 @@ builder.Services.AddDbContext<RunningShoesDbContext>(options =>
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "My API", Version = "v1" });
+    c.SwaggerDoc("v1", new() { Title = "Running Shoes API", Version = "v1" });
 });
 
 var app = builder.Build();
+
+
+    using (var scope = app.Services.CreateScope())
+    {
+        var services = scope.ServiceProvider;
+        var context = services.GetRequiredService<RunningShoesDbContext>();
+        RunningShoes.Data.RunningShoesSeeder.Seed(context);
+    }
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

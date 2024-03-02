@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\running_shoes\\RunningShoes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\running_shoes\\RunningShoes\\Migrations\\20240301102318_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240301102318_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\controllers\\runningshoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:controllers\\runningshoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\models\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:models\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\data\\runningshoesseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:data\\runningshoesseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\migrations\\20240301172141_updateshoemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:migrations\\20240301172141_updateshoemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:data\\runningshoesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|d:\\running_shoes\\runningshoes\\models\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA60A6-E3EF-445F-8CFF-2F2A5322FA87}|RunningShoes.csproj|solutionrelative:models\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,33 +42,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240301102318_InitialCreate.cs",
-              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Migrations\\20240301102318_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240301102318_InitialCreate.cs",
-              "ToolTip": "D:\\running_shoes\\RunningShoes\\Migrations\\20240301102318_InitialCreate.cs",
-              "RelativeToolTip": "Migrations\\20240301102318_InitialCreate.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "20240301172141_UpdateShoeModel.cs",
+              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Migrations\\20240301172141_UpdateShoeModel.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240301172141_UpdateShoeModel.cs",
+              "ToolTip": "D:\\running_shoes\\RunningShoes\\Migrations\\20240301172141_UpdateShoeModel.cs",
+              "RelativeToolTip": "Migrations\\20240301172141_UpdateShoeModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T10:23:18.978Z",
+              "WhenOpened": "2024-03-01T17:21:41.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RunningShoesSeeder.cs",
+              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Data\\RunningShoesSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\RunningShoesSeeder.cs",
+              "ToolTip": "D:\\running_shoes\\RunningShoes\\Data\\RunningShoesSeeder.cs",
+              "RelativeToolTip": "Data\\RunningShoesSeeder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T10:35:36.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RunningShoesController.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Controllers\\RunningShoesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RunningShoesController.cs",
               "ToolTip": "D:\\running_shoes\\RunningShoes\\Controllers\\RunningShoesController.cs",
               "RelativeToolTip": "Controllers\\RunningShoesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T10:22:31.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "RunningShoesDbContext.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Data\\RunningShoesDbContext.cs",
               "RelativeDocumentMoniker": "Data\\RunningShoesDbContext.cs",
@@ -80,59 +89,31 @@
               "RelativeToolTip": "Data\\RunningShoesDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T09:12:27.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-01T09:12:27.38Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\running_shoes\\RunningShoes\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAcwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T15:17:49.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T15:17:49.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\running_shoes\\RunningShoes\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-29T14:00:44.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\running_shoes\\RunningShoes\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAaAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-02-28T10:37:17.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Shoe.cs",
               "DocumentMoniker": "D:\\running_shoes\\RunningShoes\\Models\\Shoe.cs",
               "RelativeDocumentMoniker": "Models\\Shoe.cs",
               "ToolTip": "D:\\running_shoes\\RunningShoes\\Models\\Shoe.cs",
               "RelativeToolTip": "Models\\Shoe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T10:34:01.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-28T10:34:01.816Z"
             }
           ]
         }
