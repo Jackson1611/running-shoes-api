@@ -7,21 +7,21 @@ namespace RunningShoes.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Brand is required")]
+        [Required]
         public string Brand { get; set; }
 
-        [Required(ErrorMessage = "Name is required")]
+        [Required]
         public string Name { get; set; }
 
         public string Type { get; set; }
 
-        [Required(ErrorMessage = "Weight is required")]
+        [Required]
         public double Weight { get; set; }
 
-        [Required(ErrorMessage = "Price is required")]
+        [Required]
         public double Price { get; set; }
 
-        [Required(ErrorMessage = "Release year is required")]
-        public DateTime ReleaseYear { get; set; }
+        [Required]
+        public int ReleaseYear { get; set; }
     }
 }

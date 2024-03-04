@@ -1,15 +1,10 @@
-﻿using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using RunningShoes.Interfaces;
 using RunningShoes.Models;
-using System.Collections.Generic;
-using System.Linq;
-
 
 namespace RunningShoes.Repository
-
 {
-    public class ShoeRepository: IShoeRepository
+    public class ShoeRepository : IShoeRepository
     {
         private readonly RunningShoesDbContext _context;
 
@@ -50,10 +45,13 @@ namespace RunningShoes.Repository
         public async Task DeleteAsync(int id)
         {
             var shoe = await _context.Shoes.FindAsync(id);
-            _context.Shoes.Remove(shoe);
-            await _context.SaveChangesAsync();
+            if (shoe != null)
+            {
+                _context.Shoes.Remove(shoe);
+                await _context.SaveChangesAsync();
+            }
         }
-    }   
-    {
+
+        
     }
 }
