@@ -1,7 +1,15 @@
+
 ## Running Shoes API
 
 ### Project Description
-This ASP.NET Core Web API project allows users to manage a collection of running shoes. Users can view, create, update, and delete shoes through API endpoints.
+This ASP.NET Core Web API project is designed for members of a running club to manage a collection of running shoes. It provides a convenient way for users to browse, add, update, and remove shoes from the database.
+
+With this API, users can:
+
+View a list of available running shoes
+Add new shoes to the collection
+Update existing shoe information
+Remove shoes that are no longer needed
 
 ### Project Structure
 - **Controllers:** This folder contains the controller class (`ShoesController.cs`) that handles HTTP requests and interacts with the database.
@@ -30,3 +38,5 @@ This API utilizes Swagger for documentation and API exploration. You can access 
 ### Additional Notes
 - This project implements basic CRUD (Create, Read, Update, Delete) functionality for shoes.
 - Error handling and validation are included in the controller actions.
+
+![Screenshot](https://github.com/Jackson1611/running-shoes-api/blob/dbaf75fc5ca2c226f6ada2127a8ad8eb456c3cdb/media/Screenshot%202024-03-04%20120141.png)
