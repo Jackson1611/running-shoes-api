@@ -22,6 +22,10 @@ namespace RunningShoes.Controllers
         public async Task<ActionResult<IEnumerable<Shoe>>> GetAllShoes()
         {
             var shoes = await _shoeRepository.GetAllAsync();
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             return Ok(shoes);
         }
 

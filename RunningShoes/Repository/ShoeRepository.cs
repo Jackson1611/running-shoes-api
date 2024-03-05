@@ -15,7 +15,7 @@ namespace RunningShoes.Repository
 
         public async Task<IEnumerable<Shoe>> GetAllAsync()
         {
-            return await _context.Shoes.ToListAsync();
+            return await _context.Shoes.OrderBy(p => p.Id).ToListAsync();
         }
 
         public async Task<Shoe> GetByIdAsync(int id)
