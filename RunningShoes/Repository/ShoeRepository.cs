@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RunningShoes.Interfaces;
 using RunningShoes.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace RunningShoes.Repository
 {
@@ -13,45 +15,43 @@ namespace RunningShoes.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<Shoe>> GetAllAsync()
+        public List<Shoe> GetAll()
         {
-            return await _context.Shoes.OrderBy(p => p.Id).ToListAsync();
+            return _context.Shoes.OrderBy(p => p.Id).ToList();
         }
 
-        public async Task<Shoe> GetByIdAsync(int id)
+        public Shoe GetById(int id)
         {
-            return await _context.Shoes.FindAsync(id);
+            return _context.Shoes.Find(id);
         }
 
-        public async Task<IEnumerable<Shoe>> SearchAsync(string query)
+        public List<Shoe> Search(string query)
         {
-            return await _context.Shoes
+            return _context.Shoes
                 .Where(s => s.Name.Contains(query) || s.Brand.Contains(query))
-                .ToListAsync();
+                .ToList();
         }
 
-        public async Task AddAsync(Shoe shoe)
+        public void Add(Shoe shoe)
         {
             _context.Shoes.Add(shoe);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
-        public async Task UpdateAsync(Shoe shoe)
+        public void Update(Shoe shoe)
         {
             _context.Entry(shoe).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
-        public async Task DeleteAsync(int id)
+        public void Delete(int id)
         {
-            var shoe = await _context.Shoes.FindAsync(id);
+            var shoe = _context.Shoes.Find(id);
             if (shoe != null)
             {
                 _context.Shoes.Remove(shoe);
-                await _context.SaveChangesAsync();
+                _context.SaveChanges();
             }
         }
-
-        
     }
 }

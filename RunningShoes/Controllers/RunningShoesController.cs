@@ -2,7 +2,6 @@
 using RunningShoes.Interfaces;
 using RunningShoes.Models;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using RunningShoes.Repository;
 
 namespace RunningShoes.Controllers
@@ -19,63 +18,55 @@ namespace RunningShoes.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Shoe>>> GetAllShoes()
+        public List<Shoe> GetAllShoes()
         {
-            var shoes = await _shoeRepository.GetAllAsync();
-            if(!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            return Ok(shoes);
+            return _shoeRepository.GetAll();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Shoe>> GetShoeById(int id)
+        public Shoe GetShoeById(int id)
         {
-            var shoe = await _shoeRepository.GetByIdAsync(id);
+            var shoe = _shoeRepository.GetById(id);
             if (shoe == null)
-                return NotFound();
+                NotFound();
 
             return shoe;
         }
 
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<Shoe>>> SearchShoes([FromQuery] string query)
+        public List<Shoe> SearchShoes([FromQuery] string query)
         {
             if (string.IsNullOrWhiteSpace(query))
-                return BadRequest("Query parameter is required.");
+                BadRequest("Query parameter is required.");
 
-            var matchingShoes = await _shoeRepository.SearchAsync(query);
-            return Ok(matchingShoes);
+            return _shoeRepository.Search(query);
         }
 
         [HttpPost]
-        public async Task<ActionResult<Shoe>> AddShoe(Shoe shoe)
+        public Shoe AddShoe(Shoe shoe)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                BadRequest(ModelState);
 
-            await _shoeRepository.AddAsync(shoe);
-            return CreatedAtAction(nameof(GetShoeById), new { id = shoe.Id }, shoe);
+            _shoeRepository.Add(shoe);
+            return shoe;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateShoe(int id, Shoe shoe)
+        public IActionResult UpdateShoe(int id, Shoe shoe)
         {
             if (id != shoe.Id)
-                return BadRequest();
+                BadRequest();
 
-            await _shoeRepository.UpdateAsync(shoe);
+            _shoeRepository.Update(shoe);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteShoe(int id)
+        public IActionResult DeleteShoe(int id)
         {
-            await _shoeRepository.DeleteAsync(id);
+            _shoeRepository.Delete(id);
             return NoContent();
         }
-
-        
     }
 }

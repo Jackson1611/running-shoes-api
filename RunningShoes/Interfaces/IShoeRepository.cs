@@ -1,15 +1,15 @@
 ﻿using RunningShoes.Models;
+using System.Collections.Generic;
 
 namespace RunningShoes.Interfaces
 {
     public interface IShoeRepository
     {
-        Task<IEnumerable<Shoe>> GetAllAsync();
-        Task<Shoe> GetByIdAsync(int id);
-        Task<IEnumerable<Shoe>> SearchAsync(string query);
-        Task AddAsync(Shoe shoe);
-        Task UpdateAsync(Shoe shoe);
-        Task DeleteAsync(int id);
-
+        List<Shoe> GetAll();
+        Shoe GetById(int id);
+        List<Shoe> Search(string query);
+        void Add(Shoe shoe);
+        void Update(Shoe shoe);
+        void Delete(int id);
     }
 }
