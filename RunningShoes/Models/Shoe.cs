@@ -23,5 +23,7 @@ namespace RunningShoes.Models
 
         [Required]
         public int ReleaseYear { get; set; }
+
+        public ICollection<Review> Reviews { get; set; }
     }
 }

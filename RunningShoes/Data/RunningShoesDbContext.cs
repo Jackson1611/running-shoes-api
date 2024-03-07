@@ -13,6 +13,7 @@ public class RunningShoesDbContext : DbContext
     }
 
     public DbSet<Shoe> Shoes { get; set; }
+    public DbSet<Review> Reviews { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
