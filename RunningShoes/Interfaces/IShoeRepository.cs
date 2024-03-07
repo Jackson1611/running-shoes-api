@@ -7,6 +7,7 @@ namespace RunningShoes.Interfaces
     {
         List<Shoe> GetAll();
         Shoe GetById(int id);
+        Shoe GetByName(string name);
         List<Shoe> Search(string query);
         void Add(Shoe shoe);
         void Update(Shoe shoe);

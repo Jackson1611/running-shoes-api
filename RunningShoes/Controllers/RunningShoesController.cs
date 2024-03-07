@@ -2,12 +2,13 @@
 using RunningShoes.Interfaces;
 using RunningShoes.Models;
 using System.Collections.Generic;
+using System.Linq;
 using RunningShoes.Repository;
 
 namespace RunningShoes.Controllers
 {
     [ApiController]
-    [Route("shoes/")]
+    [Route("api/shoes/")]
     public class ShoesController : ControllerBase
     {
         private readonly IShoeRepository _shoeRepository;
@@ -18,45 +19,55 @@ namespace RunningShoes.Controllers
         }
 
         [HttpGet]
-        public List<Shoe> GetAllShoes()
+        public IActionResult GetAllShoes()
         {
-            return _shoeRepository.GetAll();
+            var shoes = _shoeRepository.GetAll();
+            return Ok(shoes);
         }
 
         [HttpGet("{id}")]
-        public Shoe GetShoeById(int id)
+        public IActionResult GetShoeById(int id)
         {
             var shoe = _shoeRepository.GetById(id);
             if (shoe == null)
-                NotFound();
+                return NotFound();
 
-            return shoe;
+            return Ok(shoe);
         }
 
         [HttpGet("search")]
-        public List<Shoe> SearchShoes([FromQuery] string query)
+        public IActionResult SearchShoes([FromQuery] string query)
         {
             if (string.IsNullOrWhiteSpace(query))
-                BadRequest("Query parameter is required.");
+                return BadRequest("Query parameter is required.");
 
-            return _shoeRepository.Search(query);
+            var matchingShoes = _shoeRepository.Search(query);
+            return Ok(matchingShoes);
         }
 
         [HttpPost]
-        public Shoe AddShoe(Shoe shoe)
+        public IActionResult AddShoe(Shoe shoe)
         {
             if (!ModelState.IsValid)
-                BadRequest(ModelState);
+                return BadRequest(ModelState);
+
+            // Check if a shoe with the same name already exists
+            var existingShoe = _shoeRepository.GetByName(shoe.Name);
+            if (existingShoe != null)
+            {
+                ModelState.AddModelError("Name", "A shoe with the same name already exists.");
+                return BadRequest(ModelState);
+            }
 
             _shoeRepository.Add(shoe);
-            return shoe;
+            return CreatedAtAction(nameof(GetShoeById), new { id = shoe.Id }, shoe);
         }
 
         [HttpPut("{id}")]
         public IActionResult UpdateShoe(int id, Shoe shoe)
         {
             if (id != shoe.Id)
-                BadRequest();
+                return BadRequest();
 
             _shoeRepository.Update(shoe);
             return NoContent();

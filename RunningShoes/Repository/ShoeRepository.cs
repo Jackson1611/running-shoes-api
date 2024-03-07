@@ -25,6 +25,11 @@ namespace RunningShoes.Repository
             return _context.Shoes.Find(id);
         }
 
+        public Shoe GetByName(string name)
+        {
+            return _context.Shoes.FirstOrDefault(s => s.Name == name);
+        }
+
         public List<Shoe> Search(string query)
         {
             return _context.Shoes
