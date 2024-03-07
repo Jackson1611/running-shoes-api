@@ -76,6 +76,11 @@ namespace RunningShoes.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteShoe(int id)
         {
+
+            if (_shoeRepository.GetById(id) == null) { 
+                return NotFound();
+            }
+
             _shoeRepository.Delete(id);
             return NoContent();
         }
