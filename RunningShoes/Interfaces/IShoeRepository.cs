@@ -12,7 +12,6 @@ namespace RunningShoes.Interfaces
         void Add(Shoe shoe);
         void Update(Shoe shoe);
         void Delete(int id);
-        List<Review> GetReviewsByShoeId(int shoeId);
-        void AddReviewToShoe(Review review);
+        
     }
 }

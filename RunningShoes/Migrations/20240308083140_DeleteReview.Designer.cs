@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace RunningShoes.Migrations
 {
     [DbContext(typeof(RunningShoesDbContext))]
-    [Migration("20240307095414_AddReview")]
-    partial class AddReview
+    [Migration("20240308083140_DeleteReview")]
+    partial class DeleteReview
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,38 +23,6 @@ namespace RunningShoes.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("RunningShoes.Models.Review", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ReviewerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ShoeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ShoeId");
-
-                    b.ToTable("Reviews");
-                });
 
             modelBuilder.Entity("RunningShoes.Models.Shoe", b =>
                 {
@@ -72,36 +40,22 @@ namespace RunningShoes.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
+                    b.Property<double?>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("ReleaseYear")
+                    b.Property<int?>("ReleaseYear")
                         .HasColumnType("int");
 
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Weight")
+                    b.Property<double?>("Weight")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
 
                     b.ToTable("Shoes");
-                });
-
-            modelBuilder.Entity("RunningShoes.Models.Review", b =>
-                {
-                    b.HasOne("RunningShoes.Models.Shoe", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("ShoeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("RunningShoes.Models.Shoe", b =>
-                {
-                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

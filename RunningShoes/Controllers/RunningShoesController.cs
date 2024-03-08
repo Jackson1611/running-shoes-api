@@ -85,28 +85,7 @@ namespace RunningShoes.Controllers
             return NoContent();
         }
 
-        [HttpGet("{id}/reviews")]
-        public IActionResult GetReviewsByShoeId(int id)
-        {
-            var reviews = _shoeRepository.GetReviewsByShoeId(id);
-            return Ok(reviews);
-        }
-
-        [HttpPost("{id}/reviews")]
-        public IActionResult AddReviewToShoe(int id, [FromBody] Review review)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var shoe = _shoeRepository.GetById(id);
-            if (shoe == null)
-                return NotFound("The shoe with the provided ID was not found.");
-
-            review.ShoeId = id; // Assign the shoe ID to the review
-
-            _shoeRepository.AddReviewToShoe(review);
-            return CreatedAtAction(nameof(GetReviewsByShoeId), new { id = id }, review);
-        }
+        
 
     }
 }

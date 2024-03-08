@@ -6,10 +6,17 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RunningShoes.Migrations
 {
     /// <inheritdoc />
-    public partial class AddReview : Migration
+    public partial class DeleteReview : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Reviews");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
                 name: "Reviews",
@@ -17,11 +24,11 @@ namespace RunningShoes.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ShoeId = table.Column<int>(type: "int", nullable: false),
-                    Rating = table.Column<int>(type: "int", nullable: false),
+                    ShoeId = table.Column<int>(type: "int", nullable: true),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ReviewerName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Rating = table.Column<int>(type: "int", nullable: true),
+                    ReviewerName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,21 +37,13 @@ namespace RunningShoes.Migrations
                         name: "FK_Reviews_Shoes_ShoeId",
                         column: x => x.ShoeId,
                         principalTable: "Shoes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Reviews_ShoeId",
                 table: "Reviews",
                 column: "ShoeId");
-        }
-
-        /// <inheritdoc />
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropTable(
-                name: "Reviews");
         }
     }
 }

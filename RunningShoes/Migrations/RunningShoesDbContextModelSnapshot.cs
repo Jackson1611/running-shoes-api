@@ -21,38 +21,6 @@ namespace RunningShoes.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("RunningShoes.Models.Review", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("Rating")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ReviewerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("ShoeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ShoeId");
-
-                    b.ToTable("Reviews");
-                });
-
             modelBuilder.Entity("RunningShoes.Models.Shoe", b =>
                 {
                     b.Property<int>("Id")
@@ -85,20 +53,6 @@ namespace RunningShoes.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Shoes");
-                });
-
-            modelBuilder.Entity("RunningShoes.Models.Review", b =>
-                {
-                    b.HasOne("RunningShoes.Models.Shoe", "Shoe")
-                        .WithMany("Reviews")
-                        .HasForeignKey("ShoeId");
-
-                    b.Navigation("Shoe");
-                });
-
-            modelBuilder.Entity("RunningShoes.Models.Shoe", b =>
-                {
-                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }
