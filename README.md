@@ -28,6 +28,7 @@ Remove shoes that are no longer needed
 ### API Endpoints
 - `GET /api/shoes`: Retrieves a list of all shoes.
 - `GET /api/shoes/{id}`: Retrieves a specific shoe by its ID.
+- `GET /api/shoes/search`: Search for shoe by brand or name
 - `POST /api/shoes`: Creates a new shoe.
 - `PUT /api/shoes/{id}`: Updates an existing shoe.
 - `DELETE /api/shoes/{id}`: Deletes a specific shoe.
