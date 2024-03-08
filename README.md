@@ -39,4 +39,4 @@ This API utilizes Swagger for documentation and API exploration. You can access 
 - This project implements basic CRUD (Create, Read, Update, Delete) functionality for shoes.
 - Error handling and validation are included in the controller actions.
 
-![Screenshot](https://github.com/Jackson1611/running-shoes-api/blob/dbaf75fc5ca2c226f6ada2127a8ad8eb456c3cdb/media/Screenshot%202024-03-04%20120141.png)
+![Screenshot](https://github.com/Jackson1611/running-shoes-api/blob/main/media/swagger.png)
