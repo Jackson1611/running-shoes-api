@@ -19,6 +19,7 @@ builder.Services.AddDbContext<RunningShoesDbContext>(options =>
 
 builder.Services.AddScoped<IShoeRepository, ShoeRepository>(); 
 
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "Running Shoes API", Version = "v1" });

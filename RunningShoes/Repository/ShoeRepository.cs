@@ -58,5 +58,19 @@ namespace RunningShoes.Repository
                 _context.SaveChanges();
             }
         }
+
+        public List<Review> GetReviewsByShoeId(int shoeId)
+        {
+            return _context.Reviews
+                .Where(r => r.ShoeId == shoeId)
+                .OrderByDescending(r => r.CreatedAt)
+                .ToList();
+        }
+
+        public void AddReviewToShoe(Review review)
+        {
+            _context.Reviews.Add(review);
+            _context.SaveChanges();
+        }
     }
 }
