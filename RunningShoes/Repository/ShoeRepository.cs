@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RunningShoes.Interfaces;
 using RunningShoes.Models;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace RunningShoes.Repository
 {

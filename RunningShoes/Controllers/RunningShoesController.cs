@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RunningShoes.Interfaces;
 using RunningShoes.Models;
-using System.Collections.Generic;
-using System.Linq;
-using RunningShoes.Repository;
+
 
 namespace RunningShoes.Controllers
 {

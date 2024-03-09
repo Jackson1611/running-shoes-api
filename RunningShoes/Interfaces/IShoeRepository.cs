@@ -1,5 +1,4 @@
 ﻿using RunningShoes.Models;
-using System.Collections.Generic;
 
 namespace RunningShoes.Interfaces
 {
